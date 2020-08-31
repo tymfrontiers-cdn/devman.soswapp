@@ -1,0 +1,26 @@
+{
+  "nav" : true,
+  "icon" : "<i class='fas fa-code'</i>",
+  "name" : "tymfrontiers-cdn/devman.soswapp",
+  "title" : "Devman",
+  "description" : "Dev manager.",
+  "homepage" : "https://github.com/tymfrontiers-cdn/devman.soswapp",
+  "authors": [
+      {
+        "name": "Ikechukwu Okalia",
+        "email": "dev@ikechukwuokalia.com"
+      },
+      {
+        "name": "Tym Frontiers Ltd.",
+        "email": "dev@tymfrontiers.com"
+      }
+  ],
+  "support" : {
+    "email" : "dev@tymfrontiers.com",
+    "website" : "https://dev.tymfrontiers.com",
+    "kollabo" : "tymfrontiers",
+    "twitter" : "tymfrontiers",
+    "facebook" : "tymfrontiers",
+    "instagram" : "tymfrontiers"
+  }
+}

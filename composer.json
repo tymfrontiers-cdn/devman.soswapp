@@ -1,23 +1,26 @@
 {
-    "name": "7os/soswapp",
-    "description": "7 OS Web - App template",
-    "keywords": ["php", "javascript","7","seven","os","web","app"],
-    "homepage": "https://github.com/7os/soswapp",
+    "name": "tymfrontiers-cdn/devman.soswapp",
+    "description": "Dev manager for 7 OS Admin project",
+    "keywords": ["devman", "developer", "manager", "admin", "soswapp"],
+    "homepage": "https://github.com/tymfrontiers-cdn/devman.soswapp",
     "type": "library",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Ikechukwu Okalia",
-            "email": "dev@ikechukwuokalia.com"
-        },
-        {
-            "name": "Tym Frontiers Ltd.",
-            "email": "dev@tymfrontiers.com"
-        }
+      {
+        "name": "Ikechukwu Okalia",
+        "email": "dev@ikechukwuokalia.com"
+      },
+      {
+        "name": "Tym Frontiers Ltd.",
+        "email": "dev@tymfrontiers.com"
+      }
     ],
     "require": {},
-    "require-dev": {},
+    "require-dev": {
+      "tymfrontiers-cdn/php-api-devapp" : ">=0.1@stable"
+    },
     "autoload": {
-        "psr-4": {}
+        "psr-4": {
+        }
     }
 }
