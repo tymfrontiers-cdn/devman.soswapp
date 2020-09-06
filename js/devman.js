@@ -52,6 +52,9 @@ function listApp (apps) {
       html += `<td>${app.requests}</td>`;
       html += `<td>`;
       let out_arr = [];
+      if (app.live) {
+        out_arr.push(`<a class="blue" href="#" onclick="sos.faderBox.url('/app/tymfrontiers-cdn/devman.soswapp/service/generate-cred.php', {app : '${app.name}'}, {exitBtn : true});"><i class="fas fa-key"></i>&nbsp;Get&nbsp;credentials</a>`);
+      }
       if (!app.live && !in_array(app.status, ['BANNED', 'PENDING', 'SUSPENDED'])) {
         out_arr.push(`<a class="green" href="#" onclick="appGoLive('${app.name}', true);"><i class="fas fa-bullseye"></i>&nbsp;Go live</a>`);
       }
