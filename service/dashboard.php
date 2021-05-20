@@ -84,7 +84,7 @@ if ($found_nav) {
     <link rel="stylesheet" href="/app/soswapp/faderbox.soswapp/css/faderbox.min.css">
     <!-- Project styling -->
     <link rel="stylesheet" href="<?php echo \html_style("base.min.css"); ?>">
-    <!-- <link rel="stylesheet" href="/app/tymfrontiers-cdn/devman.soswapp/css/devman.min.css"> -->
+    <link rel="stylesheet" href="/app/tymfrontiers-cdn/devman.soswapp/css/devman.min.css">
   </head>
   <body>
     <?php \setup_page("/app/devman/dashboard", "project-dev", true, PRJ_HEADER_HEIGHT); ?>
@@ -101,8 +101,8 @@ if ($found_nav) {
               ? "href=\"{$dash['link']}\""
               : "href='javascript:void(0)' onclick=\"{$dash['link']}()\"" ?>>
               <span class="fa-stack fa-3x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <?php echo \str_replace("fas fa-", "fas fa-stack-1x fa-inverse fa-",$dash['icon']); ?>
+                <i class="fal fa-square fa-stack-2x"></i>
+                <?php echo \str_replace("fas fa-", "fas fa-stack-1x fa-",$dash['icon']); ?>
               </span>
               <h3><?php echo $dash['title']; ?></h3>
             </a></li>
