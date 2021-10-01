@@ -79,19 +79,19 @@ endif;
             </div>
             <div class="grid-9-tablet">
               <label for="name"> <i class="fas fa-asterisk fa-border"></i> App name [lowercase / numbers / hyphens / periods]</label>
-              <input type="text" pattern="^([a-z0-9\-\.]{5,55})$" name="name" id="name" <?php echo $app ? "readonly" : ""; ?> required placeholder="app-name" value="<?php echo $app ? $app->name : ""; ?>">
+              <input type="text" name="name" id="name" <?php echo $app ? "readonly" : ""; ?> required placeholder="app-name" value="<?php echo $app ? $app->name : ""; ?>">
             </div>
             <div class="grid-3-tablet">
               <label for="prefix"><i class="fas fa-asterisk fa-border"></i> Param prefix</label>
-              <input type="text" minlength="3" maxlength="7" onkeyup="$(this).val($(this).val().toUpperCase());" pattern="^([A-Z0-9]{3,7})$" name="prefix" id="prefix" <?php echo $app ? "readonly" : ""; ?> required placeholder="APPX" value="<?php echo $app ? $app->prefix : ""; ?>">
+              <input type="text" minlength="3" maxlength="7" onkeyup="$(this).val($(this).val().toUpperCase());" name="prefix" id="prefix" <?php echo $app ? "readonly" : ""; ?> required placeholder="APPX" value="<?php echo $app ? $app->prefix : ""; ?>">
             </div>
             <div class="grid-7-tablet">
               <label for="domain"> Domain</label>
-              <input type="text" pattern="^([a-z0-9\-\.]{5,125})$" name="domain" id="domain" placeholder="www.appname.com" value="<?php echo $app ? $app->domain : ""; ?>">
+              <input type="text" name="domain" id="domain" placeholder="www.appname.com" value="<?php echo $app ? $app->domain : ""; ?>">
             </div>
             <div class="grid-5-tablet">
               <label for="endpoint"> Endpoint</label>
-              <input type="text" pattern="^([a-z0-9\-\/\_\.]{3,55})$" name="endpoint" id="endpoint" placeholder="/app-service" value="<?php echo $app ? $app->endpoint : ""; ?>">
+              <input type="text" name="endpoint" id="endpoint" placeholder="/app-service" value="<?php echo $app ? $app->endpoint : ""; ?>">
             </div>
             <div class="grid-8-tablet">
               <label for="title"><i class="fas fa-asterisk fa-border"></i> Title</label>
