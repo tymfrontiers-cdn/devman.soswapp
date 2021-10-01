@@ -53,7 +53,7 @@ require_once "../.appinit.php";
               id="query-form"
               class="block-ui color asphalt"
               method="post"
-              action="/app/tymfrontiers-cdn/devman.soswapp/src/GetAPP.php"
+              action="/app/tymfrontiers-cdn/devman.soswapp/src/GetApp.php"
               data-validate="false"
               onsubmit="sos.form.submit(this, doFetch); return false;"
               >
