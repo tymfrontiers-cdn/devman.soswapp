@@ -28,7 +28,7 @@ require_once "../.appinit.php";
     <link rel="stylesheet" href="<?php echo \html_style("base.min.css"); ?>">
   </head>
   <body>
-    <input type="hidden" id="setup-page" data-datapager="#data-pager" data-datacontainer="#app-list" data-datasearch="apps" data-datahandle="listApp">
+    <input type="hidden" data-setup="page" data-datapager="#data-pager" data-datacontainer="#app-list" data-datasearch="apps" data-datahandle="listApp">
     <?php \TymFrontiers\Helper\setup_page("/app/devman/apps", "project-dev", true, PRJ_HEADER_HEIGHT); ?>
     <?php include PRJ_INC_HEADER; ?>
 

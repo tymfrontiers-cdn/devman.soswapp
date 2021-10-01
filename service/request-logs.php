@@ -28,7 +28,7 @@ require_once "../.appinit.php";
     <link rel="stylesheet" href="<?php echo \html_style("base.min.css"); ?>">
   </head>
   <body>
-    <input type="hidden" id="setup-page" data-datapager="#data-pager" data-datacontainer="#log-list" data-datasearch="logs" data-datahandle="listLog">
+    <input type="hidden" data-setup="page" data-datapager="#data-pager" data-datacontainer="#log-list" data-datasearch="logs" data-datahandle="listLog">
     <?php \TymFrontiers\Helper\setup_page("/app/devman/request-logs", "project-dev", true, PRJ_HEADER_HEIGHT); ?>
     <?php include PRJ_INC_HEADER; ?>
 
